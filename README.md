@@ -26,6 +26,7 @@ cat_dog_classifier/
 |
 ├── main.py # FastAPI backend
 ├── dog_cat_classification.h5 # Trained TensorFlow model
+
 ├── app.py # Streamlit frontend
 ├── requirements.txt # List of dependencies
 └── README.md # Project description
@@ -38,7 +39,21 @@ cat_dog_classifier/
 The model is a binary classifier built with TensorFlow/Keras and trained to distinguish cats and dogs.  
 It expects an input image resized to **224x224**, normalized to `[0, 1]`, and outputs a single probability (`> 0.5` = dog, `< 0.5` = cat).
 
+## Model Download
+
+The trained model file `dog_cat_classification.h5` is not included in this repository due to its large size.
+
+You can download the model using this link:  
+[Download model from Google Drive](https://drive.google.com/file/d/15VVHXPvQDnIzV-D_t1AWcbvgagIpocXn/view?usp=share_link)
+
+After downloading, place the model file in the root directory of the project or update the model path in the code accordingly.
 ---
+
+## Jupyter Notebook
+
+The cat_dog_classification.ipynb notebook contains the complete code for training the cat vs dog classification model, including data preprocessing, model architecture, training process, and saving the trained model.
+
+If you want to retrain the model or experiment with the training process, open this notebook in Jupyter or Google Colab and run the cells step-by-step.
 
 ## 💻 How to Run
 
